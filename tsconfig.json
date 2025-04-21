@@ -1,26 +1,21 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "target": "es2017",
+    "module": "commonjs",
     "lib": ["es2017", "esnext.asynciterable"],
-    "typeRoots": ["node_modules/@types"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "module": "commonjs",
-    "pretty": true,
-    "sourceMap": true,
-    "declaration": true,
-    "outDir": "dist",
-    "allowJs": true,
-    "noEmit": false,
-    "esModuleInterop": true,
     "resolveJsonModule": true,
+    "strict": true,
+    "sourceMap": true,
+    "pretty": true,
     "baseUrl": "./src",
+    "typeRoots": ["node_modules/@types"],
     "paths": {
-      "@routes":["routes"]
+      "@routes": ["routes"]
     }
   },
   "include": ["src/**/*.ts"],
